@@ -1,5 +1,8 @@
 .GridWrapper {
-    display:grid;
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
     grid-template-areas: 
     "na na na na"
     "he he he he"
@@ -10,3 +13,28 @@
 
 }
 
+.Nav1 {
+    grid-area: na;
+    background-color: black;
+}
+
+.header {
+    grid-area: he;
+    background-color: blue;
+}
+
+.section1 {
+    grid-area: s1;
+}
+
+.section2 {
+    grid-area: s2;
+}
+
+.section3 {
+    grid-area: s3;
+}
+
+.section4 {
+    grid-area: s4;
+}
