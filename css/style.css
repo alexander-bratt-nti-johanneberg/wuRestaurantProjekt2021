@@ -1,0 +1,12 @@
+.GridWrapper {
+    display:grid;
+    grid-template-areas: 
+    "na na na na"
+    "he he he he"
+    "s1 s1 s2 s2"
+    "s3 s3 s4 s4"
+    "fo fo fo fo"
+    ;
+
+}
+
