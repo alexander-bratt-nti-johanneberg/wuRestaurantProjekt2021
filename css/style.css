@@ -3,9 +3,8 @@
 }
 
 .GridWrapper {
-    width: 100vw;
-    height: 100vh;
-    
+    width: 98vw;
+    height: 98vh;
     display: grid;
     grid-template-areas: 
     "na na na na"
@@ -16,7 +15,7 @@
     ;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto 800px 300px 300px 150px;
-
+    gap: 2px;
 }
 
 .nav1 {
@@ -24,6 +23,7 @@
     position: fixed;
     background-color: cadetblue;
     width: 100%;
+    opacity: 0.75;
 }
 
 
@@ -72,7 +72,7 @@ nav > ul > li > #logga {
 
 .section1 {
     grid-area: s1;
-    background-color: aquamarine;
+    background-color: cadetblue;
     font-size: 25px;
 }
 
@@ -92,7 +92,7 @@ nav > ul > li > #logga {
 
 div {
     display: flex;
-    background-color: blue;
+    background-color: cadetblue;
 }
 
 .div1 {
@@ -121,7 +121,7 @@ div {
 }
 .section3 {
     grid-area: s3;
-    background-color: aquamarine;
+    background-color: cadetblue;
     font-size: 25px;
 }
 
@@ -132,7 +132,7 @@ div {
 .footer {
     display: flex;
     grid-area: fo;
-    background-color: rgb(250, 250,20);
+    background-color: cadetblue;
     font-size: 50px;
     justify-content: center;
 }
