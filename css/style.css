@@ -7,11 +7,27 @@
     height: 98vh;
     display: grid;
     grid-template-areas: 
-    "na na na na"
-    "he he he he"
-    "s1 s1 s1 s2"
-    "s3 s3 s3 s2"
-    "fo fo fo fo"
+    "na na na na na"
+    "he he he he he"
+    "s1 s1 s1 s1 s2"
+    "s3 s3 s3 s3 s2"
+    "fo fo fo fo fo"
+    ;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 800px 300px 300px 150px;
+    gap: 2px;
+}
+
+.GridWrapper2 {
+    width: 98vw;
+    height: 98vh;
+    display: grid;
+    grid-template-areas: 
+    "na na na na na"
+    "he he he he he"
+    "s1 s1 s3 s3 s2"
+    "s4 s4 s5 s5 s2"
+    "fo fo fo fo fo"
     ;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto 800px 300px 300px 150px;
@@ -21,7 +37,7 @@
 .nav1 {
     grid-area: na;
     position: fixed;
-    background-color: cadetblue;
+    background-color: #7BD4FD;
     width: 100%;
     opacity: 0.75;
 }
@@ -44,7 +60,7 @@ nav > ul > li > #logga {
     flex-direction: row;
     align-items: right;
     justify-content: flex-end;
-    background-color:cadetblue;
+    background-color:#7BD4FD;
     flex: 1;
 }
 
@@ -72,8 +88,11 @@ nav > ul > li > #logga {
 
 .section1 {
     grid-area: s1;
-    background-color: cadetblue;
+    display: flex;
+    background-color: #7BD4FD;
     font-size: 25px;
+    flex: 1;
+    justify-content: center;
 }
 
 .section2 {
@@ -90,49 +109,68 @@ nav > ul > li > #logga {
 
 }
 
+.bilder {
+    height: 100%;
+    width: 90%;
+
+}
+
 div {
     display: flex;
-    background-color: cadetblue;
+    background-color: #7BD4FD;
 }
 
 .div1 {
     grid-area: d1;
     justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
 .div2 {
     grid-area: d2;
     justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .div3 {
     grid-area: d3;
     justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .div4 {
     grid-area: d4;
     justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 .section3 {
+    display: flex;
     grid-area: s3;
-    background-color: cadetblue;
+    background-color: #7BD4FD;
     font-size: 25px;
+    flex: 1;
+    justify-content: center;
 }
 
 .section4 {
+    display: flex;
     grid-area: s4;
+    background-color: #7BD4FD;
+    justify-content: center;
+}
+
+.section5 {
+    display: flex;
+    grid-area: s5;
+    background-color: #7BD4FD;
+    justify-content: center;
 }
 
 .footer {
     display: flex;
     grid-area: fo;
-    background-color: cadetblue;
+    background-color: #7BD4FD;
     font-size: 50px;
     justify-content: center;
 }
